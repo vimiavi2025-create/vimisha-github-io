@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMXx8TO3trkM61k3mxy2/+P",
+      "authorship_tag": "ABX9TyP/Ym7dST4m1JQdD5ilz4Ny",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -508,23 +508,27 @@
     {
       "cell_type": "code",
       "source": [
-        "predictions=model.predict([[5]])\n",
-        "print(\"PREDICTIONS:\",predictions)"
+        "Hour=([[5]])\n",
+        "prediction=model.predict(Hour)\n",
+        "if prediction==1:\n",
+        "  print(\"Student will pass\")\n",
+        "else:\n",
+        "  print(\"Student will fail\")\n"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "21wisKKxPxWR",
-        "outputId": "5fab1cf1-22fb-4d4b-8dfb-14eb8277a2d2"
+        "outputId": "31b40ad5-f42b-4b82-d1fc-586e75822b61"
       },
-      "execution_count": 8,
+      "execution_count": 18,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "PREDICTIONS: [1]\n"
+            "Student will pass\n"
           ]
         }
       ]
